@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import Recursos from './components/RecursosHidricos/Recursos'
 import './App.css'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div>
-
+        <Recursos />
       </div>
         
     </>

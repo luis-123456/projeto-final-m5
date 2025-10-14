@@ -5,11 +5,11 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  --branco:#ffffff;
-  --verde:#004643;
-  --areia: #C2B280;
-
+ --cor-principal: #38761D;
+  --cor-secundaria: #4A90E2;
+  --cor-fundo: #F0F0F0;
+  --cor-texto: #333333; 
+  background-color: var(--cor-principal);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
