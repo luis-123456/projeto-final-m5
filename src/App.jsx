@@ -1,4 +1,5 @@
-import Recursos from './components/RecursosHidricos/Recursos'
+import Recursos from './components/RecursosHidricos/Recursos.jsx';
+import Economia from './components/EconomiaVerde/Economia.jsx';
 import './App.css'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <div>
         <Recursos />
+        <Economia />
       </div>
         
     </>

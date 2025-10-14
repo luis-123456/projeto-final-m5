@@ -1,0 +1,129 @@
+:root {
+  --cor-principal: #38761D;
+  --cor-secundaria: #4A90E2;
+  --cor-fundo: #F0F0F0;
+  --cor-texto: #333333;
+  --cor-hover: #f9bc60;
+}
+
+/* ======== CONTAINER PRINCIPAL ======== */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 72px 0;
+  border-bottom: 1px solid var(--cor-hover);
+  scroll-behavior: smooth;
+  background-color: #abd1c6;
+}
+
+.main h1{
+  color: #004643;
+  transition: color 0.4s ease;
+}
+
+.main h1::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;   /* distância do título */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;      /* comprimento da linha */
+  height: 4px;      /* espessura da linha */
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--cor-principal), var(--cor-hover));
+  transition: width 0.3s ease;
+}
+
+/* Linha cresce levemente ao passar o mouse no título */
+.main h1:hover::after {
+  width: 120px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  padding: 20px;
+}
+
+/* ======== CARD GLASSMORPHISM ======== */
+.card {
+  position: relative;
+  background: #004643;
+  margin-top: 32px;
+  color: #e8e4e6;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px) saturate(150%);
+  -webkit-backdrop-filter: blur(12px) saturate(150%);
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+              box-shadow 0.4s ease, 
+              background 0.4s ease, 
+              color 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+}
+
+/* brilho diagonal sutil */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.08), transparent);
+  transition: all 0.8s ease;
+}
+
+.card:hover::before {
+  left: 100%;
+}
+
+/* hover */
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  background: rgba(255, 255, 255, 0.2);
+  color: #004643;
+}
+
+/* ======== CONTEÚDO ======== */
+.title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.year, .impact {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* ======== LOADING ======== */
+.loading {
+  text-align: center;
+  font-size: 1rem;
+  padding: 40px;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 900px) {
+  .card {
+    width: 100%;
+    max-width: 360px;
+  }
+}
