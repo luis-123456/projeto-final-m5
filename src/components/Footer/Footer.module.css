@@ -1,0 +1,32 @@
+.footer {
+  background-color: #0b3d2e; /* verde escuro */
+  color: #e9f5ee; /* tom claro */
+  text-align: center;
+  padding: 30px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+  color: #a8f0c6;
+  font-weight: 600;
+}
+
+.footer p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.refs {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #cfe9d9;
+}
+
+.copy {
+  border-top: 1px solid #267a5a;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 0.85rem;
+  color: #bfe8d1;
+}

@@ -3,6 +3,7 @@ import Menu from "./components/Menu/Menu.jsx";
 import Banner from "./components/Banner/Banner.jsx";
 import Economia from "./components/EconomiaVerde/Economia.jsx";
 import Recursos from "./components/RecursosHidricos/Recursos.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 import "./App.css";
 
 function App() {
@@ -10,12 +11,12 @@ function App() {
     <>
       <Menu />
 
-      {/* INÍCIO */}
+
       <section id="inicio">
         <Banner />
       </section>
 
-      {/* SOBRE */}
+     
       <section id="sobre" className="sobre-section">
         <div className="sobre-container">
           <h2>Economia Verde</h2>
@@ -57,17 +58,16 @@ function App() {
         </div>
       </section>
 
-      {/* DADOS */}
+      
       <section id="dados">
         <Economia />
         <Recursos />
       </section>
 
-      {/* DIRETRIZES */}
+      
       <section id="diretrizes" className="diretrizes-section">
-        <h2>Diretrizes</h2>
-        <p>As diretrizes e informações oficiais continuam aqui.</p>
-      </section>
+       <Footer/>
+       </section>
     </>
   );
 }
