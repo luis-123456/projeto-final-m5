@@ -23,18 +23,7 @@
   transition: color 0.4s ease;
 }
 
-.main h1::after {
-  content: "";
-  position: absolute;
-  bottom: -50px;   /* distância do título */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 200px;      /* comprimento da linha */
-  height: 4px;      /* espessura da linha */
-  border-radius: 2px;
-  background: linear-gradient(90deg, var(--cor-principal), var(--cor-hover));
-  transition: width 0.3s ease;
-}
+
 
 /* Linha cresce levemente ao passar o mouse no título */
 .main h1:hover::after {

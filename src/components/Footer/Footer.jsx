@@ -21,6 +21,8 @@ const Footer = () => {
 
       <div className={styles.copy}>
         <p>© 2025 Projeto Sustentabilidade. Todos os direitos reservados.</p>
+        <p>Integrantes: Luis Henrique, Daniel de Jesus, Gabriela Flores</p>
+        <p>Bárbara Antônia, Nyvea Maria, Iasmym Patrícia </p>
       </div>
     </footer>
   );
