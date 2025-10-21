@@ -9,7 +9,6 @@ const Menu = () => {
       </div>
       <ul className={styles.navList}>
         <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
         <li><a href="#dados">Dados</a></li>
         <li><a href="#diretrizes">Diretrizes</a></li>
       </ul>
